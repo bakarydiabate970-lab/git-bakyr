@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Online | BrewHaven</title>
+    <script src="https://kit.fontawesome.com/1d022b9b93.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="order.css">
+</head>
+<body>
+    <header class="order-header">
+        <div class="container header-shell">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-mug-hot logo-icon"></i>
+                <div class="logo-text">Brew<span>Haven</span></div>
+            </a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#menu-picks">Menu</a></li>
+                    <li><a href="#order-form">Order</a></li>
+                    <li><a href="#pickup-details">Pickup</a></li>
+                </ul>
+            </nav>
+
+            <a href="index.html#products" class="btn btn-secondary">Browse Blends</a>
+        </div>
+    </header>
+
+    <main>
+        <section class="order-hero">
+            <div class="container order-hero-grid">
+                <div class="hero-copy">
+                    <div class="eyebrow">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                        Freshly roasted and ready today
+                    </div>
+                    <h1>Place Your BrewHaven Order Online</h1>
+                    <p>
+                        Build your coffee order in minutes. Choose your roast, pickup time, and extras,
+                        then collect it from our Milan cafe while it is still at peak flavor.
+                    </p>
+
+                    <div class="hero-actions">
+                        <a href="#order-form" class="btn btn-primary">Start Your Order</a>
+                        <a href="#menu-picks" class="btn btn-secondary">See Best Sellers</a>
+                    </div>
+
+                    <div class="hero-stats">
+                        <article>
+                            <strong>15 min</strong>
+                            <span>Average pickup prep</span>
+                        </article>
+                        <article>
+                            <strong>3 blends</strong>
+                            <span>Available today</span>
+                        </article>
+                        <article>
+                            <strong>7am-8pm</strong>
+                            <span>Order window</span>
+                        </article>
+                    </div>
+                </div>
+
+                <aside class="hero-panel">
+                    <p class="panel-label">Today at BrewHaven</p>
+                    <h2>Barista Pick</h2>
+                    <div class="featured-order">
+                        <img src="images/2.jpg" alt="Ethiopian Yirgacheffe coffee bag">
+                        <div>
+                            <h3>Ethiopian Yirgacheffe</h3>
+                            <p>Floral aroma, citrus finish, elegant body.</p>
+                        </div>
+                    </div>
+                    <ul class="panel-list">
+                        <li><span>Complimentary tasting note card</span><strong>Included</strong></li>
+                        <li><span>Grind options</span><strong>Whole or filter</strong></li>
+                        <li><span>Pickup location</span><strong>Milan flagship</strong></li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <section class="menu-picks" id="menu-picks">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="section-kicker">Popular Orders</p>
+                    <h2>Choose a Blend That Matches Your Day</h2>
+                </div>
+
+                <div class="menu-grid">
+                    <article class="menu-card">
+                        <img src="images/2.jpg" alt="Ethiopian Yirgacheffe">
+                        <div class="menu-copy">
+                            <span class="menu-tag">Bright & Floral</span>
+                            <h3>Ethiopian Yirgacheffe</h3>
+                            <p>Tea-like body with jasmine aroma and crisp citrus acidity.</p>
+                            <div class="menu-meta">
+                                <span>$16.99</span>
+                                <span>Light roast</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="images/3.jpg" alt="Columbian Supremo">
+                        <div class="menu-copy">
+                            <span class="menu-tag">Smooth & Balanced</span>
+                            <h3>Columbian Supremo</h3>
+                            <p>Caramel sweetness, toasted nut finish, and medium body.</p>
+                            <div class="menu-meta">
+                                <span>$16.99</span>
+                                <span>Medium roast</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="menu-card">
+                        <img src="images/4.jpg" alt="Dark Roast Espresso">
+                        <div class="menu-copy">
+                            <span class="menu-tag">Bold & Intense</span>
+                            <h3>Dark Roast Espresso</h3>
+                            <p>Dark chocolate depth with a dense crema-ready finish.</p>
+                            <div class="menu-meta">
+                                <span>$17.99</span>
+                                <span>Dark roast</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="order-layout" id="order-form">
+            <div class="container order-grid">
+                <section class="order-card form-card">
+                    <div class="section-heading left">
+                        <p class="section-kicker">Order Details</p>
+                        <h2>Customize Your Pickup</h2>
+                    </div>
+
+                    <form class="order-form">
+                        <div class="field-grid two-up">
+                            <label>
+                                Full Name
+                                <input type="text" name="name" placeholder="Your name">
+                            </label>
+                            <label>
+                                Phone Number
+                                <input type="tel" name="phone" placeholder="(39) 351 999 0178">
+                            </label>
+                        </div>
+
+                        <div class="field-grid two-up">
+                            <label>
+                                Coffee Blend
+                                <select name="blend">
+                                    <option>Ethiopian Yirgacheffe</option>
+                                    <option>Columbian Supremo</option>
+                                    <option>Dark Roast Espresso</option>
+                                </select>
+                            </label>
+                            <label>
+                                Grind Style
+                                <select name="grind">
+                                    <option>Whole Bean</option>
+                                    <option>Filter Grind</option>
+                                    <option>Espresso Grind</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="field-grid three-up">
+                            <label>
+                                Quantity
+                                <input type="number" name="quantity" min="1" value="1">
+                            </label>
+                            <label>
+                                Pickup Date
+                                <input type="date" name="pickup-date">
+                            </label>
+                            <label>
+                                Pickup Time
+                                <input type="time" name="pickup-time">
+                            </label>
+                        </div>
+
+                        <fieldset class="choice-group">
+                            <legend>Add Extras</legend>
+                            <label><input type="checkbox" name="extras" value="tasting-card"> Tasting note card</label>
+                            <label><input type="checkbox" name="extras" value="brew-guide"> Brew guide printout</label>
+                            <label><input type="checkbox" name="extras" value="gift-wrap"> Gift wrap packaging</label>
+                        </fieldset>
+
+                        <label>
+                            Special Instructions
+                            <textarea name="notes" rows="4" placeholder="Share roast preferences, packaging requests, or pickup notes."></textarea>
+                        </label>
+
+                        <button type="submit" class="btn btn-primary submit-btn">Confirm Order Request</button>
+                    </form>
+                </section>
+
+                <aside class="order-card summary-card" id="pickup-details">
+                    <div class="section-heading left">
+                        <p class="section-kicker">Pickup Summary</p>
+                        <h2>What Happens Next</h2>
+                    </div>
+
+                    <div class="summary-stack">
+                        <article>
+                            <span class="summary-step">1</span>
+                            <div>
+                                <h3>We prepare your roast</h3>
+                                <p>Your order is packed fresh after you submit your request.</p>
+                            </div>
+                        </article>
+                        <article>
+                            <span class="summary-step">2</span>
+                            <div>
+                                <h3>You receive confirmation</h3>
+                                <p>Our team will confirm pickup timing by phone or email.</p>
+                            </div>
+                        </article>
+                        <article>
+                            <span class="summary-step">3</span>
+                            <div>
+                                <h3>Collect at BrewHaven</h3>
+                                <p>Visit 123 Coffee Lane, Milan, and enjoy a faster handoff.</p>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="pickup-box">
+                        <h3>Pickup Window</h3>
+                        <p>Monday to Saturday</p>
+                        <strong>7:00 AM - 8:00 PM</strong>
+                    </div>
+
+                    <div class="contact-box">
+                        <h3>Need to adjust your order?</h3>
+                        <p><i class="fas fa-phone"></i> (39) 351 999 0178</p>
+                        <p><i class="fas fa-envelope"></i> hello@brewhaven.com</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
